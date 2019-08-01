@@ -87,9 +87,17 @@ openTab = function(evt, tabName) {
   }
 
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.classList.add("active");
-  // x=evt.currentTarget.classList; 
-  // alert("The id of the triggered element: "+ x);
+  x=evt.currentTarget.classList; 
+  if (x != undefined) {
+    // alert("The triggered element: "+ x);
+    evt.currentTarget.classList.add("active"); 
+  } else {
+    var hometablink = document.getElementsByClassName("tablinks")[0];
+    // hometablink.className += " active";
+    hometablink.classList.add("active"); 
+  }
+  
+  
 };
 
 getUserData = function() {

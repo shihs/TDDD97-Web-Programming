@@ -88,7 +88,7 @@ div.maincontainer{
 .tab ul li{
 	display: inline-block;
 	list-style: none;
-	padding: 15px 15px;
+	padding: 14px 0px;
 	cursor: pointer;
 }
 
@@ -96,13 +96,15 @@ div.maincontainer{
 	color: black;
 	font-size: 17px;
 	text-decoration: none;
+	padding: 14px 16px;
 }
 
-.tab ul li:hover {background-color: #ddd;}
-.tab ul li:focus, .action{
+.tab ul li:hover {
+	background-color: #ddd;
+}
+.tab ul li:focus, .active{
 	background-color: #ccc;
 }
-
 
 div .tabcontent{
 	border-style: solid;
