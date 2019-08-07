@@ -82,7 +82,7 @@ div.maincontainer{
 	border-width: 1px;
 	border-color: #ccc;
 	background-color: #f1f1f1;
-
+	font-size: 0;
 }
 
 .tab ul li{
@@ -90,6 +90,7 @@ div.maincontainer{
 	list-style: none;
 	padding: 14px 0px;
 	cursor: pointer;
+	/*float:left;*/
 }
 
 .tab ul li a{
